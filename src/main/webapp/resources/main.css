@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    background: url('beijing002.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.main-container {
+    display: flex;
+height: 100%;
+
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: auto;
+    width: 100%;
+    border: none;
+}
+.topbar {
+    width: 100%;
+    background: rgba(30, 60, 109, 0.89);
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 2px 13px rgba(30,60,109,0.07);
+    position: relative;
+    z-index: 9;
+}
+.topbar-inner {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+#current-time {
+    font-size: 1.11em;
+    margin-right: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.online-count {
+    margin-right: 32px;
+    font-size: 0.98em;
+}
+.logout-btn {
+    background: #ff7070;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.23s;
+}
+.logout-btn:hover {
+    background: #b61c1c;
+}
+.sidebar {
+    width: 240px;
+    height: 100%;
+    background: rgba(30, 60, 109, 0.89);
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.07);
+}
+.sidebar h2 {
+    color: #fff;
+    font-size: 1.6em;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+.nav-btn {
+    display: block;
+    background: #fff;
+    color: #1e3c6d;
+    border: none;
+    width: 160px;
+    margin: 16px 0;
+    padding: 16px 0;
+    font-size: 1.13em;
+    border-radius: 18px;
+    font-weight: bold;
+    transition: all 0.22s;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(30,60,109,0.09);
+}
+.nav-btn:hover {
+    background: #355d9c;
+    color: #fff;
+    transform: scale(1.06);
+}
+
+/* 团队管理、部门管理、项目管理等页面的通用样式 */
+.container, .content-box {
+    max-width: 1200px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+h1, .content-title {
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #007bff;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+.no-data, .empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #8c8c8c;
+    background-color: #fafafa;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.empty-state h3 {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.project-table, table {
+    border: 1px solid #e0e0e0;
+}
+
+table th {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.project-table th {
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+}
+
+table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.project-table td {
+    border: 1px solid #e0e0e0;
+    padding: 10px 15px;
+    color: #555;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.project-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.team-id, .department-id, .project-id {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.employee-id {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.team-name, .department-name {
+    font-weight: 500;
+}
+
+.leader-name, .manager-name {
+    color: #333;
+}
+
+.leader-id, .manager-id, .employee-name {
+    color: #666;
+}
+
+.leader-id, .manager-id {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.stats {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+}
+
+.stats span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* 新增按钮样式 */
+.action-buttons {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #1e7e34;
+}
+
+.form-inline {
+    display: flex;
+    gap: 10px;
+}
+
+.form-control {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+. label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 考勤页面专用样式 */
+.attendance-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.attendance-header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 15px;
+}
+
+.attendance-title {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.attendance-table th {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.attendance-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.attendance-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.attendance-footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.attendance-submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.attendance-submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.project-count, .employee-count {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.date-cell, .phone-cell {
+    font-family: monospace;
+    font-size: 13px;
+    color: #666;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-planning {
+    background-color: #e7f3ff;
+    color: #0066cc;
+}
+
+.status-active {
+    background-color: #e6fffa;
+    color: #00a854;
+}
+
+.status-completed {
+    background-color: #f6f6f6;
+    color: #8c8c8c;
+}
+
+.status-leave {
+    background-color: #fff1f0;
+    color: #f5222d;
+}
+
+.status-inactive {
+    background-color: #f6f6f6;
+    color: #8c8c8c;
+}
+
+.role-badge, .department-badge {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: #f0f2f5;
+    color: #595959;
+    font-size: 12px;
+}
+
+.copyright {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    color: #aaa;
+    font-size: 13px;
+}
+
+@media (max-width:700px){
+    .main-container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        flex-direction: row;
+        padding: 15px 0;
+    }
+    .nav-btn{
+        margin: 0 8px;
+        width: 90px;
+        padding: 10px 0;
+        font-size: 1em;
+    }
+    .content{
+        padding: 40px 8vw 0 8vw;
+    }
+}
