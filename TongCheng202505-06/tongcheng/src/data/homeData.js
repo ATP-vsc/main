@@ -1,0 +1,317 @@
+//首页数据
+//搜索数据
+
+export const homeData = {
+    //大类别
+    big_classify: [
+        { name: "酒店", icon: "icon-jiudian", router: '/jiudian' },
+        { name: "机票", icon: "icon-feiji", router: '/feiji' },
+        { name: "火车票", icon: "icon-huoche", router: '/huoche' },
+        { name: "打车", icon: "icon-dache", router: '/dache' },
+        { name: "旅游", icon: "icon-Beach", router: '/lvyou' },
+    ],
+    //小类别
+    small_classify: [
+
+        { name: "民宿公寓", icon: "icon-xiangzhenshuiliguanlidanwei" },
+        { name: "国际机票", icon: "icon-guojijipiaoicon" },
+        { name: "汽车船票", icon: "icon-bus-fill" },
+        { name: "景点门票", icon: "icon-jingdianmenpiao" },
+        { name: "一日游", icon: "icon-yiriyou" },
+        { name: "全球酒店", icon: "icon-quanqiujiudian" },
+        { name: "顺风车", icon: "icon-a-shunfengcheicon" },
+        { name: "租车", icon: "icon-zizhi-chuzuchegongsi" },
+        { name: "定制游", icon: "icon-dingzhiyou" },
+        { name: "借钱", icon: "icon-jieqian" },
+    ],
+    //tag数据
+    centent_nav_list: [
+
+        {
+            tab: "发现更多",
+            data: [{
+                    pic: require('@/assets/home1.png'),
+                    title: "石狮龟湖公园",
+                    sales: "14km",
+                    price: "20",
+                    label: ["五月限定", "蓝眼泪"],
+                    router: '/guihupack',
+
+                },
+                {
+                    pic: require('@/assets/home2.png'),
+                    title: "泉州开元寺",
+                    sales: "10km",
+                    price: "30",
+                    label: ["山海城韵", "洞天奇遇"],
+                    router: '/kaiyuanshi',
+                },
+                {
+                    pic: require('@/assets/home3.png'),
+                    title: "叁拾叁民宿",
+                    sales: "10.1km",
+                    price: "30",
+                    label: ["文艺典雅", "床很舒服"],
+                    router: '/sanshisan',
+                },
+                {
+                    pic: require('@/assets/home4.png'),
+                    title: "玄妙古观",
+                    sales: "25km",
+                    price: "10",
+                    label: ["千年道韵", "元妙观"],
+                    router: '/xuanmiao',
+                },
+                {
+                    pic: require('@/assets/home5.png'),
+                    title: "石牛山景区",
+                    sales: "19km",
+                    price: "200",
+                    label: ["登高望远", "户外徒步"],
+                    router: '/shiniushan',
+                },
+                {
+                    pic: require('@/assets/home6.png'),
+                    title: "蟳埔村簪花",
+                    sales: "28km",
+                    price: "20",
+                    label: ["今日簪花", "来世漂亮"],
+                    router: '/xunpucun',
+                },
+            ],
+        },
+        {
+            tab: "好玩目的地",
+            data: [{
+                    pic: require('@/assets/home10.jpg'),
+                    title: "四川九寨沟",
+                    sales: "3天2晚",
+                    price: "20",
+                    label: ["特色熊猫餐", "黄龙都江堰"],
+                    router: '/jiuzhaigo',
+                },
+                {
+                    pic: require('@/assets/home12.jpg'),
+                    title: "东京富士山",
+                    sales: "6天5晚",
+                    price: "30",
+                    label: ["纯玩无购物", "畅玩迪士尼"],
+                    router: '/fushishan',
+                },
+                {
+                    pic: require('@/assets/home13.jpg'),
+                    title: "一见钟秦西安",
+                    sales: "3天2晚",
+                    price: "30",
+                    label: ["舒适酒店", "赠送驼铃"],
+                    router: '/xian',
+                },
+                {
+                    pic: require('@/assets/home14.jpg'),
+                    title: "圆梦北京城",
+                    sales: "5天4晚",
+                    price: "10",
+                    label: ["八达岭长城", "故宫博物院"],
+                    router: '/beij1',
+                },
+                {
+                    pic: require('@/assets/home15.jpg'),
+                    title: "北京高端团",
+                    sales: "4天3晚",
+                    price: "200",
+                    label: ["升旗仪式", "高档酒店"],
+                    router: '/beijing2',
+                },
+                {
+                    pic: require('@/assets/home17.jpg'),
+                    title: "亚特兰蒂斯",
+                    sales: "5天4晚",
+                    price: "20",
+                    label: ["蜈支洲后海村", "游艇出海"],
+                    router: '/shanya',
+                },
+            ],
+        },
+        {
+            tab: "节后错峰游",
+            data: [{
+                    pic: require('@/assets/home11.jpg'),
+                    title: "来'北疆'撒野",
+                    sales: "7天6晚",
+                    price: "200",
+                    label: ["赛里木湖", "赠送旅拍"],
+                    router: '/xingjiang',
+                },
+                {
+                    pic: require('@/assets/home9.png'),
+                    title: "石狮黄金海岸",
+                    sales: "20km",
+                    price: "20",
+                    label: ["绝美落日", "烂漫海滩"],
+                    router: '/huangjinghaian',
+                },
+
+            ],
+        },
+        {
+            tab: "去看演出吧",
+
+            data: [{
+                    pic: require('@/assets/home21.jpg'),
+                    title: "旅行团乐队",
+                    sales: "厦门站",
+                    price: "20",
+                    label: ["巡回演唱会", "9月20日"],
+                    router: '/lvxingtuan',
+
+                },
+                {
+                    pic: require('@/assets/home22.jpg'),
+                    title: "张杰[开往1982]",
+                    sales: "厦门站",
+                    price: "30",
+                    label: ["巡回演唱会", "6月21日"],
+                    router: '/zhangjie',
+                },
+                {
+                    pic: require('@/assets/home23.jpg'),
+                    title: "王心凌SUGAR HIGH",
+                    sales: "厦门站",
+                    price: "30",
+                    label: ["个人演唱会", "7月5日"],
+                    router: '/wangxingling',
+                },
+                {
+                    pic: require('@/assets/home24.jpg'),
+                    title: "王力宏[最好的地方]",
+                    sales: "泉州站",
+                    price: "10",
+                    label: ["巡回演唱会", "8月3日"],
+                    router: '/wanglihong',
+                },
+                {
+                    pic: require('@/assets/home25.jpg'),
+                    title: "西施音乐节",
+                    sales: "浙江绍兴",
+                    price: "200",
+                    label: ["摇滚烽火", "6月1日"],
+                    router: '/xishi'
+                },
+                {
+                    pic: require('@/assets/home26.jpg'),
+                    title: "伍佰&ROCKSTAR2",
+                    sales: "厦门站",
+                    price: "20",
+                    label: ["巡回演唱会", "9月20日"],
+                    router: '/wubai',
+                },
+                {
+                    pic: require('@/assets/home27.jpg'),
+                    title: "草莓音乐节",
+                    sales: "福州长乐",
+                    price: "20",
+                    label: ["逍遥游", "5月24日"],
+                    router: '/caomei',
+                },
+            ],
+        },
+    ],
+    // 酒店数据部分
+    hotels: [{
+            id: 1,
+            title: "泉州酒店",
+            img: require('@/assets/qzjd.jpeg'),
+            rating: 4.8,
+            desc: "五星级酒店，奢华体验",
+            reviews: 1200,
+            distance: "距市中心1.2km",
+            label: ["免费停车", "游泳池", "健身房"],
+            originalPrice: 600,
+            currentPrice: 486
+        },
+        {
+            id: 2,
+            title: "邻里沐里民宿",
+            img: require('@/assets/llmlms.jpg'),
+            rating: 4.7,
+            desc: "温馨如家，舒适体验",
+            reviews: 980,
+            distance: "距海边0.5km",
+            label: ["海景房", "免费早餐", "露台"],
+            originalPrice: 150,
+            currentPrice: 116
+        },
+        {
+            id: 3,
+            title: "兮遇轻奢别院",
+            img: require('@/assets/xyqsbd.jpg'),
+            rating: 4.9,
+            desc: "轻奢风格，精致体验",
+            reviews: 850,
+            distance: "距景区0.8km",
+            label: ["私人庭院", "茶室", "书吧"],
+            originalPrice: 280,
+            currentPrice: 219
+        },
+        {
+            id: 4,
+            title: "听风驿民宿",
+            img: require('@/assets/tfyms.jpg'),
+            rating: 4.6,
+            desc: "安静舒适，放松身心",
+            reviews: 720,
+            distance: "距古镇入口300m",
+            label: ["投影仪", "咖啡机", "阳台"],
+            originalPrice: 180,
+            currentPrice: 157
+        },
+        {
+            id: 5,
+            title: "星遇民宿",
+            img: require('@/assets/xyms.jpg'),
+            rating: 4.8,
+            desc: "星空主题，浪漫体验",
+            reviews: 650,
+            distance: "距天文台2km",
+            label: ["星空房", "望远镜", "观景台"],
+            originalPrice: 300,
+            currentPrice: 251
+        },
+        {
+            id: 6,
+            title: "天空之城酒店",
+            img: require('@/assets/tkzcjd.jpg'),
+            rating: 4.7,
+            desc: "云端体验，俯瞰全城",
+            reviews: 930,
+            distance: "市中心地标建筑",
+            label: ["空中餐厅", "全景窗", "SPA"],
+            originalPrice: 200,
+            currentPrice: 171
+        },
+        {
+            id: 7,
+            title: "向风旅",
+            img: require('@/assets/xfl.jpg'),
+            rating: 4.5,
+            desc: "简约风格，性价比高",
+            reviews: 1100,
+            distance: "距地铁站500m",
+            facilities: ["公共厨房", "洗衣房", "休息区"],
+            originalPrice: 280,
+            currentPrice: 165
+        },
+        {
+            id: 8,
+            title: "喜见民宿",
+            img: require('@/assets/xjms.jpg'),
+            rating: 4.6,
+            desc: "喜庆风格，欢乐氛围",
+            reviews: 780,
+            distance: "距商业街200m",
+            facilities: ["KTV", "游戏室", "烧烤区"],
+            originalPrice: 120,
+            currentPrice: 83
+        }
+    ]
+};
